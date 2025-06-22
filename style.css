@@ -1,9 +1,9 @@
-
 *::before,
 *::after {
     margin: 0;
     padding: 0;
 }
+
 
 /* CSS Variables for easier management */
 :root {
@@ -20,6 +20,7 @@
     --mobile-breakpoint: 480px; /* Specific breakpoint for mobile version */
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -27,11 +28,13 @@ body {
     color: var(--text-color-dark);
 }
 
+
 .container {
     max-width: 1000px;
     margin: 15px;
     padding: 0 20px;
 }
+
 
 /* Header Styles */
 header {
@@ -46,6 +49,7 @@ header {
     z-index: 10;
 }
 
+
 .logo {
     display: flex;
     align-items: center;
@@ -53,16 +57,19 @@ header {
     left: 150px;
 }
 
+
 .logo img {
     height: 30px;
     margin-right: 20px;
 }
+
 
 .logo span {
     font-size: 1.2em;
     font-weight: bold;
     color: var(--text-color-dark);
 }
+
 
 nav ul {
     list-style: none;
@@ -71,9 +78,11 @@ nav ul {
     left: -10rem;
 }
 
+
 nav li {
     margin-right: 20px;
 }
+
 
 nav a {
     text-decoration: none;
@@ -84,10 +93,12 @@ nav a {
     left: 30em;
 }
 
+
 nav a:hover,
 nav a:active { /* Links hover/active: #FF6565 */
     color: var(--primary-red);
 }
+
 
 /* Hero Section Styles */
 .hero {
@@ -107,6 +118,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     background-color: var(--dark-bg-color); /* Explicit dark background */
 }
 
+
 .hero::before {
     content: '';
     position: absolute;
@@ -116,6 +128,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     height: 100%;
     background-color: rgba(16, 15, 15, 0.29);
 }
+
 
 .hero-content {
     position: relative;
@@ -128,11 +141,13 @@ nav a:active { /* Links hover/active: #FF6565 */
     width: 100%;
 }
 
+
 .hero-content h1 {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: -40px;
 }
+
 
 .hero-content .subtitle {
     font-size: 1.1em;
@@ -141,6 +156,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     position: relative;
     top: 13px;
 }
+
 
 .call-to-action {
     background-color: var(--feature-icon-color);
@@ -157,10 +173,12 @@ nav a:active { /* Links hover/active: #FF6565 */
     margin-top: 20px;
 }
 
+
 .call-to-action:hover,
 .call-to-action:active {
     opacity: 0.9;
 }
+
 
 .hero-description {
     font-size: 0.9em;
@@ -172,6 +190,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     margin-bottom: -9.9rem;
 }
 
+
 /* Features Section (the "What we do..." section) */
 .features-section {
     padding: 60px 0;
@@ -180,6 +199,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     text-align: center;
     width: 100%;
 }
+
 
 .what-we-do {
     color: #1e272e;
@@ -197,6 +217,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     margin-right: 80px;
 }
 
+
 .features-grid {
     display: flex;
     justify-content: center;
@@ -204,6 +225,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     gap: 30px;
     padding: 0 20px;
 }
+
 
 .feature-item {
     flex: 1;
@@ -218,6 +240,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     padding-left: 2em;
 }
 
+
 .feature-item img {
     width: 60px;
     height: auto;
@@ -228,6 +251,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     /* This filter changes a black icon to #FF6347 (the feature icon color) */
 }
 
+
 .feature-item p {
     font-size: 12px;
     line-height: 1.5;
@@ -235,7 +259,9 @@ nav a:active { /* Links hover/active: #FF6565 */
     padding-left: 5em;
 }
 
+
 /* --- Responsive adjustments --- */
+
 
 /* Tablet/Narrow Desktop screens (e.g., 768px down to 481px) */
 @media (max-width: var(--tablet-breakpoint)) {
@@ -243,22 +269,28 @@ nav a:active { /* Links hover/active: #FF6565 */
         padding: 20px 20px;
     }
 
+
     nav li {
         margin-left: 15px;
     }
+
 
     .hero-content h1 {
         font-size: 2.5em;
     }
 
+
     .hero-content .subtitle {
         font-size: 1.1em;
     }
+
 
     .features-section {
         padding: 40px 0;
     }
 }
+
+
 
 
 /* Mobile screens (480px and below) */
@@ -269,9 +301,11 @@ nav a:active { /* Links hover/active: #FF6565 */
         justify-content: center;
     }
 
+
     .logo {
         margin-bottom: 10px;
     }
+
 
     nav {
         width: 100%;
@@ -286,26 +320,32 @@ nav a:active { /* Links hover/active: #FF6565 */
         text-align: center;
     }
 
+
     nav ul.active {
         display: flex;
     }
 
+
     nav li {
         margin: 10px 0;
     }
+
 
     .hero {
         min-height: 500px;
         padding: 80px 0 40px;
     }
 
+
     .hero-content h1 {
         font-size: 2em;
     }
 
+
     .hero-content .subtitle {
         font-size: 0.9em;
     }
+
 
     .call-to-action {
         padding: 12px 25px;
@@ -313,13 +353,16 @@ nav a:active { /* Links hover/active: #FF6565 */
         margin-bottom: 25px;
     }
 
+
     .hero-description {
         font-size: 0.9em;
     }
 
+
     .features-section {
         padding: 30px 0;
     }
+
 
     .features-grid {
         flex-direction: column;
@@ -327,15 +370,18 @@ nav a:active { /* Links hover/active: #FF6565 */
         gap: 20px;
     }
 
+
     .feature-item {
         margin-bottom: 0;
         max-width: 80%;
     }
 
+
     .feature-item img {
         width: 45px;
     }
 }
+
 
 .results-section {
     background-image: url(img/background2.png); /* Replace with your actual background image path */
@@ -350,17 +396,21 @@ nav a:active { /* Links hover/active: #FF6565 */
 }
 
 
+
+
 .results {
     font-family: SansProsemi-Bold;
     font-size: 2rem;
     padding-top: 6em;
     padding-left: 14em;
 
+
 }
 .result p{
     font-family: SansPro-regular;
     padding: 50px;
 }
+
 
 .descriptions {
     font-size: 18px;
@@ -375,8 +425,10 @@ nav a:active { /* Links hover/active: #FF6565 */
     max-width: 700px;
     margin-left: 400px;
 
-    
+
+   
 }
+
 
 .results-grid {
     display: flex;
@@ -386,12 +438,14 @@ nav a:active { /* Links hover/active: #FF6565 */
     width: 100%;
 }
 
+
 .result-item {
     display: flex;
     justify-content: center;
     align-items: center;
     /* No specific width needed here as pentagon-wrapper will define size */
 }
+
 
 .pentagon-wrapper {
     position: relative;
@@ -410,11 +464,13 @@ nav a:active { /* Links hover/active: #FF6565 */
     left: 23em;
 }
 
+
 .pentagon-img {
     width: 100%;
     height: auto;
     display: block; /* Remove extra space below image */
 }
+
 
 .pentagon-text {
     position: absolute;
@@ -427,6 +483,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     padding-top: 2em;
 }
 
+
 .description {
     position: absolute;
     top: 65%; /* Adjust vertical position */
@@ -438,6 +495,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     padding-top: 2em;
 }
 
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .results-description {
@@ -445,22 +503,27 @@ nav a:active { /* Links hover/active: #FF6565 */
         padding: 25px;
     }
 
+
     .results-grid {
         gap: 30px;
     }
 
+
     .pentagon-wrapper {
-        width: 140px; 
+        width: 140px;
     }
+
 
     .pentagon-text {
         font-size: 1.8em;
     }
 
+
     .description {
         font-size: 0.8em;
     }
 }
+
 
 @media (max-width: 768px) {
     .results-description {
@@ -469,62 +532,74 @@ nav a:active { /* Links hover/active: #FF6565 */
         padding: 20px;
     }
 
+
     .results-grid {
         gap: 20px;
-        justify-content: center; 
+        justify-content: center;
     }
 
+
     .pentagon-wrapper {
-        width: 120px; 
+        width: 120px;
     }
+
 
     .pentagon-text {
         font-size: 1.5em;
     }
+
 
     .description {
         font-size: 0.75em;
     }
 }
 
+
 @media (max-width: 576px) {
     .results-section {
         padding: 30px 0;
-        min-height: auto; 
+        min-height: auto;
     }
+
 
     .container {
         padding: 0 15px;
     }
+
 
     .results-description {
         font-size: 0.9em;
         margin-bottom: 25px;
     }
 
+
     .results-grid {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         gap: 25px;
     }
 
+
     .pentagon-wrapper {
-        width: 150px; 
+        width: 150px;
     }
+
 
     .pentagon-text {
         font-size: 2em;
     }
+
 
     .description {
         font-size: 0.85em;
     }
 }
 
+
 .contact-section.white-background {
     padding: 20px 0;
-    background-color: var(--light-bg-color); 
-    color: var(--text-color-light); 
+    background-color: var(--light-bg-color);
+    color: var(--text-color-light);
     text-align: center;
     width: 100%;
     margin-top: -20vh;
@@ -532,13 +607,15 @@ nav a:active { /* Links hover/active: #FF6565 */
     padding-bottom: 20vh;
 }
 
+
 .contact-section.white-background .contact-title {
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 70px; 
-    color: var(--text-color-light); 
+    margin-bottom: 70px;
+    color: var(--text-color-light);
     text-transform: lowercase; /* Make title lowercase as in screenshot */
 }
+
 
 .contact-section.white-background .contact-content {
     max-width: 300px; /* Make the form narrower as in the screenshot */
@@ -551,6 +628,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     top: -7vh;
 }
 
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -559,12 +637,14 @@ nav a:active { /* Links hover/active: #FF6565 */
     margin-bottom: 40px; /* Space between form and button */
 }
 
+
 .form-group {
     text-align: left; /* Align label and input to the left */
     width: 100%;
     position: relative; /* For the underline effect */
     padding: 0; /* Ensure no extra padding */
 }
+
 
 .form-group label {
     display: block; /* Make label appear above input */
@@ -575,6 +655,7 @@ nav a:active { /* Links hover/active: #FF6565 */
     margin-bottom: 5px; /* Gap between label text and the input underline */
     text-transform: capitalize;
 }
+
 
 .form-input-underline,
 .form-textarea-underline {
@@ -596,14 +677,17 @@ nav a:active { /* Links hover/active: #FF6565 */
     -moz-appearance: none;
     appearance: none;
 
+
     /* Control padding for text position relative to the underline */
     padding: 2px 0 2px 0; /* Top: 2px, Right/Left: 0, Bottom: 2px */
 }
+
 
 .form-input-underline:focus,
 .form-textarea-underline:focus {
     border-bottom-color: var(--primary-red); /* Highlight on focus */
 }
+
 
 .form-textarea-underline {
     min-height: 80px; /* Adjust height for message field */
@@ -611,33 +695,38 @@ nav a:active { /* Links hover/active: #FF6565 */
     padding: 5px 0 5px 0; /* Slightly more padding for textarea if desired */
 }
 
+
 .contact-form .call-to-action {
     margin-top: 8px;
     width: auto;
     align-self: center;
-    background-color: var(--primary-red); 
-    color: var(--text-color-dark); 
-    border-radius: 20px; 
-    padding: 12px 30px; 
+    background-color: var(--primary-red);
+    color: var(--text-color-dark);
+    border-radius: 20px;
+    padding: 12px 30px;
 }
 
+
 footer {
-     background-color: #1a202c; 
-    color: #fff; 
-    padding-top: 5em; 
+     background-color: #1a202c;
+    color: #fff;
+    padding-top: 5em;
     padding-left: 20em;
     height: 300px;
     min-width: 1119px;
     text-align: center;
     position: relative;
-    
+   
 }
+
 
 footer .logo-img{
     float: left;
     padding-left: 11px;
 
+
 }
+
 
 footer .icon{
     display: flex;
@@ -649,8 +738,11 @@ footer .icon{
   font-family: 'SourceSansPro-Regular';
   font-size: 0.75rem;
   color: rgb(255, 255, 255,0.3);
-  
+ 
   padding-top: 100px;
 }
  
+
+
+
 
